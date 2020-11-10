@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./index.js"],"names":["console","log"],"mappings":"kHAAA,iBAGAA,QAAQC,IAAR,cACAD,QAAQC,IAAR,gB","file":"main.3bb849b6d809ea449f4f.js","sourcesContent":["import './styles.css';\r\n\r\n\r\nconsole.log(`rest test2`);\r\nconsole.log(`rest test2`);\r\n"],"sourceRoot":""}
