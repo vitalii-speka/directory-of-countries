@@ -1,3 +1,4 @@
+
 export default class FetchApiCountries {
     constructor() { }
     
@@ -10,6 +11,10 @@ export default class FetchApiCountries {
 
     get query() {
         return this.searchQuery;
+    }
+
+    set query(newQuery) {
+        this.searchQuery = newQuery;
     }
 
 }
