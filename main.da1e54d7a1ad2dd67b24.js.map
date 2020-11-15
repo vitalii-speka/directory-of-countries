@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./index.js"],"names":["console","log"],"mappings":"kHAAA,iBAGAA,QAAQC,IAAR,cACAD,QAAQC,IAAR,qB","file":"main.da1e54d7a1ad2dd67b24.js","sourcesContent":["import './styles.css';\r\n\r\n\r\nconsole.log(`rest test2`);\r\nconsole.log(`hw-12-countries`);\r\n"],"sourceRoot":""}
