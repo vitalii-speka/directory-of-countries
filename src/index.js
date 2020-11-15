@@ -11,7 +11,7 @@ const fetchApiCounries = new FetchApiCountries();
 const countriesContainer = document.querySelector('.js-countries-container');
 const searchForm = document.querySelector('.js-search-form')
 
-searchForm.addEventListener('input', debounce(onSearch, 1000));
+searchForm.addEventListener('input', debounce(onSearch, 500));
 
 function onSearch(e) {
     e.preventDefault();
@@ -21,7 +21,8 @@ function onSearch(e) {
     fetchApiCounries.fetchCountries().then(countries => {
         if (countries.length > 10) {
             error({
-                text: "Более 10 стран. Пожалуйста, уточните запрос!"
+                text: "Более 10 стран. Пожалуйста, уточните запрос!",
+                delay: 1000,
             });
         } else if (countries.status === 404) {
             error({
@@ -36,7 +37,8 @@ function onSearch(e) {
     })
     .catch(Error => {
         Error({
-            text: "You must enter query parameters!"
+            text: "+catch+ You must enter query parameters!",
+            delay: 3000
         });
         console.log(Error)
     })
